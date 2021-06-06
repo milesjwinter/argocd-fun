@@ -3,7 +3,7 @@
 # RayCluster settings:
 
 # image is Ray image to use for the head and workers of this Ray cluster.
-image: rayproject/ray:latest
+image: rayproject/ray:b88163-py38
 # headPodType is the podType used for the Ray head node (as configured below).
 headPodType: rayHeadType
 # podTypes is the list of pod configurations available for use as Ray nodes.
