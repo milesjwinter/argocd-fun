@@ -72,7 +72,7 @@ namespacedOperator: false
 # in which to launch the operator.
 operatorNamespace: ray
 # operatorImage - The image used in the operator deployment.
-operatorImage: rayproject/ray:latest
+operatorImage: rayproject/ray:1.4.0rc2-py36-cpu
 # `rayproject/ray:latest` contains the latest official release version of Ray.
 # `rayproject/ray:nightly` runs the current master version of Ray and carries some stability fixes.
 # For a particular official release version of Ray, use `rayproject/ray:1.x.y`.
