@@ -27,5 +27,8 @@ kubectl delete secret -l owner=helm,name=argo-cd
 ```
 From this point on, to add new apps we no longer need to helm install or kubectl apply ever again. You add apps by commiting a new application manifest to `apps/templates`. The new applications can link to public helm repositories, public or private git reps (needs creds) and the root application will make sure they are synced and deployed/removed from cluster.
 
+To do this, move apps from `unused_apps` dir to `apps/templates/` and ArgoCD will create/destroy them. The default refresh period is 3min, but you can click `refresh` on root app to make it happen sooner.
+
+
 This repo is largely adapted from this blog [post](https://www.arthurkoziel.com/setting-up-argocd-with-helm/)
 
