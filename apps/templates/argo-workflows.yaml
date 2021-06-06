@@ -17,7 +17,7 @@ spec:
         pushgateway:
           enabled: false
     repoURL: https://argoproj.github.io/argo-helm
-    targetRevision: "v3.0.2"
+    targetRevision: 0.2.4
   syncPolicy:
     automated:
       prune: true
